@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>id card genrator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+	<div id="outer-container">
+		<div id="inner-container">
+			<div id="heading"><h1>ID Card Generator</h1></div>
+			<div id="id-container">
+			<div id="left-div" class="idCard">
+				<h3>Enter Student Details</h3>
+				<form name="contact-form" action="#" >
+					<div class="inputWithIcon">
+					<label for="StudentName"><b>Enter Name:</b></label><br>
+					<span>&#xf007;</span>
+					<input type="text" placeholder="Pooja Yadav"  
+					id="StudentName" class="placehold"><br>
+                    <label for="CollegeName"><b>Enter College Name:</b></label><br>
+                    <span>&#xf1ad;</span>
+					<input type="text" placeholder="I.I.T" id="CollegeName" class="placehold"><br>
+					<label for="Location"><b>Enter Location:</b></label><br>
+					<span>&#xf041;</span>
+					<input type="text" placeholder="Rajasthan" id="Location" class="placehold"><br>
+					<label for="myfile"><b>Enter Student's picture:</b></label><br>
+					<input type="file" id="myfile" name="myfile" accept="image/*"
+					 onchange="showPreview(event)"><br>
+					<img id="myfile-preview"><br>
+					<input type="button" name="btn" value="Generate Card" class="button" id="button">
+				    </div>
+				</form>
+			</div>
+		 <div id="right-div" class="idCard">
+			<div id="genrated-id-card">
+			  <h2>Genrated ID Card</h2>
+			  <div id="student-detail">
+			  <div id="display-image">
+			  <img src="" id="imgDisplayed">
+			  </div>
+			  <div id="display-detail">
+			  <ul>
+			  	<li>Name: <b><span id="name"></span></b></li>
+			  	<li>CollegeName: <b><span id="ColName"></span></b></li>
+			  	<li>Location:<b> <span id="location"></span></b></li>
+			  </ul>
+			  </div>
+			  </div>
+			 </div>
+		 </div>
+		    </div>
+		</div>
+		<div>
+		
+	</div>
+
+
+	<script src="index.js">
+		
+	</script>
+	
+
+</body>
+</html>
